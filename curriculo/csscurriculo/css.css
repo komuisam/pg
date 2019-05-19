@@ -1,0 +1,160 @@
+/*-------------------------------layaout / estructura de la pagina--------------------------------*/
+.maincontainer{/*contenedor global*/
+display: flex;
+flex-basis: 100%;
+justify-content: center;
+}
+@media screen and (max-width: 700px) {/*dimenciones y accion */
+	.maincontainer {
+		flex-direction:column;
+	}
+	aside{
+		flex-basis: 80%;
+		flex-direction:row;
+		flex:0;
+	}
+}
+
+/*--------------------------------aside panel iquierdo--------------------------------------------*/
+
+aside{/*panel lateral */
+	background-color: grey;
+	border-radius: 10%;
+	flex-basis: 20%;
+	margin-right: 3%;
+}/*fin*/
+
+aside *{/*todo dentro del aside*/
+	color: orange;
+}
+aside h2{/*titulos dentro de los aside*/
+	text-transform: capitalize; /*transforma los titulos en mayusculas la primera letra*/
+	letter-spacing: 1px;/*separasion*/
+	color: blue;
+}
+aside h2:hover {/*titulos dentro de los aside*/
+	
+	color: green;
+}
+aside section h2:first-child{/* primer h2 que esta en seccion dentro de un aside xd*/
+	border-bottom: 3px solid green;
+	border-top: 3px solid #8F8DEC;
+	border-radius: 20%;
+}
+#perfil img {/*imagen del perfil*/
+		border-radius: 50%;
+		width: 100%;
+}/*fin*/
+
+#perfil figcaption{/* figcaption dentro del perfil*/
+		text-align: center;
+		color: magenta;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+
+}/*fin*/
+
+dl{/*lisa de definicion*/
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+dt,
+dd{
+	
+	flex-basis: 50%;
+	margin: 0;
+	border-top: 1px solid white;
+	line-height: 1.5em;
+}
+
+dd:last-of-type,
+dt:last-of-type{
+	border-bottom: 1px solid white;
+}
+dt {
+	font-weight: bolder;
+}
+
+
+
+                                /*fin css aside*/
+
+
+
+                                /*css general*/
+p{/*parrafos*/
+	color: violet;
+}/*fin*/
+
+ul{/*listas en genereal*/
+		list-style-type: circle;
+		
+}/*fin*/
+h1,/*h generales*/
+h2{
+	text-transform: uppercase;
+}
+
+
+.bor li{
+	border-bottom: 2px white solid ;
+}
+ /*------------------------------------------contenido main-------------------------------------*/
+main{
+	flex-basis: 60%;
+}
+main section > h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+.hero{/*clase main superior*/
+	padding: 5% 15% 5%;
+	background-color: aqua;
+	/*dentro de clase hero*/
+	/*  horizontal/vertical/ blur=difuminacion/tamaño*/
+	box-shadow:inset 3px 3px 15px 2px orange;/*sombra*/
+	border-radius: 50%;
+	text-align: center;
+}
+.hero h2 {/*h2 dentro de la clase*/
+	color: red;
+	border-top: 2px solid white;
+	letter-spacing: 5px;
+}
+.hero h1 {/*h2 dentro de la clase*/
+	letter-spacing: 10px;
+}
+
+.aboutme{
+	background-color: navy;
+}
+.aboutme p{
+		line-height: 1.5em;
+}
+.aboutme h2{
+	background-color: white;
+
+}
+article h3,
+article h4,
+article h5{
+		font-weight: bold;
+		text-transform: capitalize;
+}
+article ul { /*listas dentro de articulos*/
+	list-style-type: square;
+
+}/*fin*/
+
+meter {/*mete en general*/
+	display: block;
+	width: 80%;
+}
+
+
+
+
